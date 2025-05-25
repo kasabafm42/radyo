@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Radyo Çalar | ramazansancar.com.tr</title>
+	<title>Radyo Çalar | KASABAFM</title>
 	<meta charset="UTF-8">
 	<style>
 	/* General styles */
@@ -152,14 +152,14 @@
 		</div>
 		<div class="description">
 			<p>
-				Open Source: <a href="https://github.com/ramazansancar/radyo" target="_blank">Github</a> | <a href="https://github.com/ramazansancar/radyo/issues/new/choose" target="_blank">Radio Request</a>
+				Open Source: <a href="https://kasabafm42.github.io/radyo/" target="_blank">Github</a> | <a href="https://kasabafm42.github.io/radyo/issues/new/choose" target="_blank">Radio Request</a>
 			</p>
 		</div>
 	</div>
 </body>
 <!--<div class="app">
     <div class="description">
-        Open Source: <a href="https://github.com/ramazansancar/radyo" target="_blank">Github</a> | <a href="https://github.com/ramazansancar/radyo/issues/new/choose" target="_blank">Radio Request</a>
+        Open Source: <a href="https://kasabafm42.github.io/radyo/" target="_blank">Github</a> | <a href="https://kasabafm42.github.io/radyo/issues/new/choose" target="_blank">Radio Request</a>
     </div>
 </div>-->
 <script type="text/javascript">
@@ -204,7 +204,7 @@
 		//player.play();
 		radioSelect.value = url;
 		// Title and radio name changed
-		document.title = name+' - Radyo Player | ramazansancar.com.tr' // Title değiştirdik.
+		document.title = name+' - Radyo Player | https://kasabafm42.github.io/radyo/' // Title değiştirdik.
 		radioName.textContent = name;
 		localStorage.setItem('radioUrl',url);
 		localStorage.setItem('radioName',name);
@@ -269,7 +269,7 @@
 		console.log(event.target.selectedOptions["0"].innerText)
 		var selectedRadyo = radioSelect.value;
 		if (selectedRadyo) {
-			document.title = event.target.selectedOptions["0"].innerText+' - Radyo Player | ramazansancar.com.tr' // Title değiştirdik.
+			document.title = event.target.selectedOptions["0"].innerText+' - Radyo Player | https://kasabafm42.github.io/radyo/r' // Title değiştirdik.
 			Play(selectedRadyo,event.target.selectedOptions["0"].innerText,'http://127.0.0.1:8080/radyo/posters/meu_radyo_logo.png')
 		} else {
 			videoPlayer.pause();
